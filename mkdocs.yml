@@ -55,9 +55,15 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Project:
+      - Knowledge charter: about/knowledge-charter.md
   - Learn:
       - Learning path: learn/index.md
+      - Timing curriculum: learn/timing-curriculum.md
       - The CMSSW big picture: learn/01-big-picture.md
+  - Timing:
+      - Timing in CMSSW: timing/index.md
+      - Product and persistence inventory: timing/inventory.md
   - Architecture:
       - Overview: architecture/index.md
   - Workflows:
@@ -66,6 +72,8 @@ nav:
       - Overview: subsystems/index.md
   - Debugging:
       - Overview: debugging/index.md
+  - Reference:
+      - Verification snapshot: reference/verification-snapshot.md
   - Glossary: glossary.md
   - Contributing: contributing.md
 

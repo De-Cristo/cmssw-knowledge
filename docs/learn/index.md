@@ -9,6 +9,12 @@ The learning path favors concepts and executable workflows over a sequential
 tour of packages. Each chapter should make the next layer of code easier to
 read.
 
+The general CMSSW foundations below run in parallel with a focused,
+source-driven [timing curriculum](timing-curriculum.md). The two paths are
+deliberately connected: timing provides a concrete case study for learning the
+framework, while the framework chapters explain why timing data moves and
+disappears as it does.
+
 ## Foundations
 
 1. [The CMSSW big picture](01-big-picture.md)
