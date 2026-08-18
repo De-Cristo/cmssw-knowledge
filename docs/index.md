@@ -8,7 +8,7 @@ description: A guided path through the architecture and code of CMSSW
 Learn CMSSW as a connected system rather than as a collection of tens of
 thousands of source files.
 
-This knowledge base is organized around three complementary views:
+This knowledge base is organized around complementary views:
 
 <div class="grid cards" markdown>
 
@@ -47,6 +47,16 @@ This knowledge base is organized around three complementary views:
 
     [:octicons-arrow-right-24: Browse subsystems](subsystems/index.md)
 
+-   :material-timer-outline:{ .lg .middle } **Timing**
+
+    ---
+
+    Trace BTL, ETL, and HGCAL time from simulated energy deposits through
+    reconstruction, track association, TICL, persistence, and analysis-facing
+    products.
+
+    [:octicons-arrow-right-24: Follow the timing chain](timing/index.md)
+
 </div>
 
 !!! note "Source code remains authoritative"
@@ -58,12 +68,19 @@ This knowledge base is organized around three complementary views:
 ## How to use this site
 
 1. Begin with [The CMSSW big picture](learn/01-big-picture.md).
-2. Use **Search** when investigating a symbol, package, data product, or error.
-3. Follow source anchors to verify details in the relevant CMSSW checkout.
-4. Record discoveries that would otherwise be expensive to reconstruct.
+2. Follow the [timing curriculum](learn/timing-curriculum.md) for the focused
+   BTL, ETL, and HGCAL study.
+3. Use **Search** when investigating a symbol, package, data product, or error.
+4. Follow source anchors to verify details in the relevant CMSSW checkout.
+5. Record discoveries that would otherwise be expensive to reconstruct.
 
 ## Current status
 
-The site structure and publishing pipeline are ready. The first content phase
-will establish the framework lifecycle, Python configuration model, event data
-model, EventSetup and conditions, and one end-to-end reconstruction workflow.
+The first source audit covers the Phase-II BTL, ETL, and HGCAL timing chain on
+CMSSW `master` at commit
+[`f1ac1dbe`](https://github.com/cms-sw/cmssw/commit/f1ac1dbe1f36762b14843b1fb906971de43a1044).
+It identifies the principal timing products, transformations, and persistence
+boundaries through MTD track extension and HGCAL TICL/PF reconstruction.
+
+See the [verification snapshot](reference/verification-snapshot.md) for the
+scope and known gaps of this audit.
